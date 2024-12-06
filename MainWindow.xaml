@@ -1,0 +1,24 @@
+﻿<Window x:Class="SkiaSharp3._116._1.NET.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkiaSharp3._116._1.NET"
+        xmlns:skia="clr-namespace:SkiaSharp.Views.WPF;assembly=SkiaSharp.Views.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <skia:SKGLElement Grid.Row="0" Grid.Column="0" PaintSurface="SKElement_PaintSurface"/>
+    <skia:SKElement Grid.Row="0" Grid.Column="1" PaintSurface="SKElement_PaintSurface"/>
+    <TextBlock Grid.Row="1" Grid.Column="0" x:Name="blockGL"/>
+    <TextBlock Grid.Row="1" Grid.Column="1" x:Name="block"/>
+  </Grid>
+</Window>
